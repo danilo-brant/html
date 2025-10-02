@@ -1,0 +1,20 @@
+
+
+img {
+  display: block;
+  width: 220px;        /* largura fixa igual para todas */
+  height: 140px;       /* altura fixa igual para todas */
+  object-fit: cover;   /* recorta para preencher sem distorcer */
+  border-radius: 6px;
+  opacity: 0.6;
+  transform: scale(0.98);
+  transform-origin: center center;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+img:hover,
+img:focus {
+  opacity: 1;
+  transform: scale(1.05);
+  cursor: pointer;
+}
