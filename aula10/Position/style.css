@@ -1,0 +1,62 @@
+/* ...existing code... */
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  position: relative; /* referência para .absolute */
+  padding-top:56px; /* espaço para o header fixo */
+}
+
+/* cabeçalho fixo simples */
+.titulo{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:56px;
+  background:#111;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+}
+
+/* área principal */
+main{
+  max-width:720px;
+  margin:12px auto;
+  padding:0 12px;
+}
+
+/* sticky — cola abaixo do header */
+.sticky{
+  position:sticky;
+  top:56px;
+  background:#ffd;
+  padding:8px;
+  margin-bottom:10px;
+}
+
+/* relative — move visualmente mas mantém espaço */
+.relative{
+  position:relative;
+  top:8px;
+  left:8px;
+  background:#def;
+  padding:8px;
+  margin-bottom:10px;
+}
+
+/* absoluta no canto inferior direito */
+.absolute{
+  position:absolute;
+  bottom:16px;
+  right:16px;
+  background:#f55;
+  color:#fff;
+  padding:8px 10px;
+  border-radius:6px;
+}
+
+/* texto longo */
+.long p{ margin-bottom:1rem; }
