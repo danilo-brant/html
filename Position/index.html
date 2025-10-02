@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Posições CSS</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Título fixo no topo */
+        .titulo-fixo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #000000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            z-index: 1000;
+        }
+
+        /* Espaço para não esconder o conteúdo atrás do fixo */
+        .espaco-titulo {
+            height: 70px;
+        }
+
+        /* Caixa sticky */
+        .caixa-sticky {
+            position: sticky;
+            top: 70px;
+            background: #000000;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            width:10%;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        /* Caixa relative */
+        .caixa-relative {
+            position: sticky;
+            top: 30px;
+            left: 30px;
+            background: #000000;
+             color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+             width:10%;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* Caixa absolute no canto inferior direito */
+        .caixa-absolute {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            background: #000000;
+            color: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            z-index: 999;
+        }
+
+        /* Para garantir rolagem */
+        .conteudo-longo {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo-fixo">Título Fixo no Topo</div>
+    <div class="espaco-titulo"></div>
+
+    <div class="conteudo-longo">
+        <div class="caixa-sticky">Caixa Sticky</div>
+        <div class="caixa-relative">Caixa Relative</div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod, nisi vel consectetur cursus, nisl erat dictum enim, nec dictum sem erat nec enim. 
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil alias ad nam fugiat vero tempora quaerat, sequi consectetur iste harum saepe illum sunt quis commodi iusto cum aut placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, labore id amet rem omnis necessitatibus expedita corporis iure ex officiis, placeat est delectus aspernatur, enim nobis quam numquam laudantium quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde quisquam totam fugit cupiditate placeat explicabo, cum cumque, ratione similique inventore voluptas laudantium? Incidunt eaque minus laborum eum, aliquam facere. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolores ab harum exercitationem cupiditate doloremque rerum iure veniam repudiandae quod quis, cumque eos error placeat soluta totam iusto aperiam nisi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta expedita nihil sed commodi impedit repellendus reprehenderit architecto doloremque beatae. Doloremque vel at blanditiis repudiandae aperiam odit, magnam nulla doloribus nesciunt. lorem
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laborum officiis repellendus aliquam vitae autem. Animi hic tempora, officiis debitis inventore doloribus provident atque quaerat accusamus mollitia! Ipsa, illum quasi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores enim cumque optio. Ad sit quam nobis? Culpa hic sequi iure molestias alias officiis veniam quibusdam laborum? Voluptates tenetur neque nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, autem nemo id similique eum iure harum fugit iste maiores enim quod, porro non! Adipisci odit blanditiis quam facilis atque dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illum, assumenda recusandae sit laboriosam aspernatur, aperiam dolores exercitationem quasi numquam voluptatibus delectus id quae est! Assumenda sit perferendis esse voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas repellendus expedita odit error assumenda, eveniet fugit molestiae, quia ipsam provident cupiditate id labore quod ab sunt eos exercitationem, minus neque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque totam fugit nostrum explicabo quasi. Dolorem minima labore earum eius enim quos, animi tempore quisquam dolorum, deserunt, sed veniam minus libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt excepturi ullam at beatae quam! Commodi animi voluptate dignissimos eum laudantium? Laboriosam aliquam magnam adipisci rem! Explicabo commodi exercitationem hic fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum perspiciatis exercitationem veniam tempora. Aperiam, maxime qui? Repellat cumque autem laborum impedit molestias, incidunt aperiam libero iure deleniti fugiat quod? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ducimus excepturi tempore, ratione at, provident hic magnam deleniti sequi cupiditate quisquam, earum dolore dolor. Odit, modi. Vel velit totam sapiente! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis nisi cumque ipsum, repellendus molestiae, excepturi architecto officiis inventore vel temporibus omnis deleniti quis cum odit perferendis, voluptatibus asperiores at! Et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nesciunt iusto earum repellat tempore harum temporibus veritatis voluptates, similique, reprehenderit maxime optio nam mollitia soluta itaque ad labore praesentium ullam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, totam aliquam obcaecati facilis incidunt omnis quisquam doloribus laboriosam quod, sequi delectus ipsum quae? Quo ad optio consectetur fuga voluptates ut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis maiores optio, suscipit debitis exercitationem dolorem omnis possimus, cumque cum laborum minima mollitia veritatis quos facilis, beatae eos ipsa accusamus at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt suscipit a dolore optio eligendi, quo ipsam atque eos? Delectus, voluptatum? Minima facere, a amet cupiditate autem perferendis temporibus eum ipsum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium expedita harum, quod id fugit doloremque dolorem nemo quae soluta. Iure velit architecto atque rerum accusantium repellat perspiciatis quae quisquam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quisquam quos tempore repellat iusto deleniti ipsum numquam dicta, culpa rem omnis reprehenderit atque nobis laboriosam, esse consequatur error tempora dolore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga voluptatum similique molestiae beatae, dolorum quis repellendus cupiditate labore tenetur nihil quod. Facere rerum ab, iste nihil ipsa corporis suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod dignissimos eveniet esse, alias aut repellendus fugiat et architecto commodi iusto exercitationem quo eaque magni porro earum pariatur libero totam quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, fugit dicta sapiente assumenda, possimus, sit et reprehenderit id officiis dolorum ex illum magni perferendis labore. Aut, iure? Voluptas, nulla nostrum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id sed, porro aperiam blanditiis placeat labore accusamus exercitationem quidem culpa fugiat commodi, nam sunt reiciendis eaque nostrum sint iure ratione ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic corrupti, voluptatibus voluptatum placeat laudantium aliquid quo nostrum obcaecati quas molestiae perspiciatis! Obcaecati maiores doloribus minus officia! Libero sed eius voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur distinctio, minima error id magni iure, similique dolores omnis ipsam ipsa illo maxime facilis. Consectetur, nam assumenda? Reprehenderit tempore sapiente excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima blanditiis necessitatibus magnam veritatis qui facere sapiente vel sed saepe quam ut, voluptate molestiae itaque nulla deserunt ducimus, suscipit sequi rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto veritatis nulla adipisci voluptatibus minima, assumenda nemo pariatur id doloribus, facere earum repellat maiores laboriosam dolore eaque neque! Voluptatem, enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem error quae consequuntur saepe ipsum expedita blanditiis dolorem harum, delectus tenetur est, earum iste architecto eveniet accusantium nobis vel? Corporis, quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in id, adipisci aliquam asperiores corrupti natus dolorum nam eius repellat quas ab laboriosam aspernatur deserunt velit repellendus vero esse nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati architecto necessitatibus dignissimos labore beatae, praesentium itaque aliquid veniam accusamus similique quos illo dolorem expedita? Tempora quam ex voluptate assumenda sed!
+
+        </p>
+    </div>
+    <div class="caixa-absolute">Caixa Absolute<br>Inferior Direita</div>
+</body>
+</html>

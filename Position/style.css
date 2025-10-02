@@ -1,0 +1,67 @@
+/* Título fixo no topo */
+.titulo-fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #85181f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Espaço para não esconder o conteúdo atrás do fixo */
+.espaco-titulo {
+    height: 60px;
+}
+
+/* Caixa sticky */
+.caixa-sticky {
+    position: sticky;
+    top: 60px;
+    background: #c99c9e;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Caixa relative */
+.caixa-relative {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    background: #f7c873;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Caixa absolute no canto inferior direito */
+.caixa-absolute {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    background: #7a1d1d;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Para garantir rolagem */
+.conteudo-longo {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
