@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+/* ======= HEADER ======= */
+header {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    background-color: #c99c9e;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header h1:hover {
+    color: #fff;
+}
+
+/* ======= SEÇÃO DESTAQUE ======= */
+main {
+    background-color: #f1f1f1;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.destaque {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #852d2f;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #5e1f21;
+}
+
+/* Imagem do destaque */
+.imagem img {
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+
+footer {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 100px;   /* altura menor */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+
+
