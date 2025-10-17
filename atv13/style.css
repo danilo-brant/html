@@ -1,0 +1,135 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #0b0b0f;
+  color: white;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e50914;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e50914;
+}
+
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 40px;
+  text-align: center;
+}
+
+.principal h1 {
+  color: #e50914;
+  font-size: 2rem;
+}
+
+button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #c40712;
+  transform: scale(1.05);
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.imagem img:hover {
+  transform: scale(1.08);
+}
+.cards {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #141414;
+  width: 280px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: white;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #1a1a1a;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
+}
+
+.card:hover h3 {
+  color: #e50914;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #e50914;
+}
