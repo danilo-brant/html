@@ -1,0 +1,184 @@
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: mudarCor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes mudarCor {
+    from {background: red;}
+    to {background: blue;}
+
+    0% {
+     transform: translateX(0px);
+    }
+    50% {
+     transform: translateX(100px);
+
+    }
+    100% {
+     transform: translateX(200px);
+    }
+}
+
+.quadrado2{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    animation-name: mudarCor2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes mudarCor2 {
+    from{background-color: red;}
+    to{background-color: blue;}
+
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color: red;
+    }
+}
+
+.botao-animado{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: tomato;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    transform-origin: center center;
+    animation: botao 5s infinite alternate;
+}
+
+@keyframes botao{
+    0%{
+        background-color: tomato;
+        color: white;
+        transform: scale(2);
+    }
+    50%{
+        background-color: #ffb347; 
+        color: #111;
+        transform: scale(1.08);
+    }
+    100%{
+        background-color: #32cd32; 
+        color: #000;
+        transform: scale(2);
+    }
+}
+.texto-piscando{
+    font-size: 50px;
+    animation-name: piscar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes piscar{
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: green; }
+}
+  
+
+.sol {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: nascer-sol 6s infinite;
+}
+
+@keyframes nascer-sol {
+    0% { bottom: -50px; }
+    100% { bottom: 150px; }
+}
+.sol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 150px;
+    border: 1px, solid black;
+}
+.solimg {
+    width: 130px;
+    animation: andarSol 4s infinite alternate;
+}
+@keyframes andarSol {
+    0% {
+        transform: translateY(-100px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 3%;
+        transform: translateY(100px);
+    }
+}
+.caixa-coracao {
+    width: 160px;
+    margin: 20px auto;
+
+}
+
+.coracao {
+    width: 120px;
+    height: auto;
+    display: inline-block;
+    transform-origin: center center;
+    animation: bater 1s infinite;
+    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.12));
+}
+
+@keyframes bater {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.texto-flutuante {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  display: flex;
+  animation: flutuar 5s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* sobe um pouco */
+  }
+  100% {
+    transform: translateY(0); /* volta para a posição inicial */
+  }
+}
+
+
